@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legal Solutions</title>
-    <!-- Tailwind and DaisyUI link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <h1 class="text-5xl text-orange-500">Hello Ziniya!! I Love You</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Solutions</title>
+  <!-- Tailwind and DaisyUI link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome link -->
+  <script src="https://kit.fontawesome.com/a321198ed6.js" crossorigin="anonymous"></script>
+  <!-- font EB Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <!-- customized styles -->
+    <style>
+      .font-eb {
+        font-family: 'EB Garamond', serif;
+      }
+    </style>
+</head>
+
+<body class="container w-full lg:w-3/4 my-10 mx-auto">
+  <header>
+    <nav>
+      <div class="navbar bg-base-100 flex flex-col lg:flex-row">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Cases</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class=""><img src="./images/logo2.png" alt=""></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl text-[#707070]">
+            <li><a>Home</a></li>
+            <li class="flex flex-row justify-center items-center space-x-1"><a>Services <span><i
+                    class="fa-solid fa-chevron-right"></i></span></a></li>
+            <li class="flex flex-row justify-center items-center space-x-1"><a>Cases <span><i
+                    class="fa-solid fa-chevron-right"></i></span></a></li>
+            <li class="flex flex-row justify-center items-center space-x-1"><a>Blog <span><i
+                    class="fa-solid fa-chevron-right"></i></span></a></li>
+            <li class="flex flex-row justify-center items-center space-x-1"><a>Contact Us <span><i
+                    class="fa-solid fa-chevron-right"></i></span></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end my-3">
+          <a class="btn text-2xl text-white font-semibold bg-[#B68C5A]">Free Consultation</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="hero my-10" style="background-image: url(./images/banner.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-10 mt-20 text-3xl lg:text-5xl font-bold font-eb text-white">We Provide Effective <br> Legal Solutions</h1>
+            <p class="mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <div class="flex flex-row justify-center items-center space-x-3 mb-10">
+              <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs" />
+              <button class="btn text-xl border-none text-white font-semibold bg-[#B68C5A]">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
 </html>
